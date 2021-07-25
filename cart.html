@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+    <title>Cart | Shop Unlimited</title>
+</head>
+<body>
+    <header class="headings">
+        <nav class="navigationbar">
+            <div class="logo">
+                <img src="Images/logo.png" alt="Logo">
+            </div>
+            <div class="websitename">
+                Shop Unlimited
+            </div>
+
+
+            <ul class="links">
+                <a href="index.html"><li class="lnks">Home</li></a>
+                <a href="shop.html"><li class="lnks">Shop</li></a>
+                <a href="#"><li class="lnks activelink">Cart</li></a>
+                <a href="about.html"><li class="lnks">About Us</li></a>
+                <a href="signin.html"><li id="l1" class="lnks">Sign in</li></a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="cartitems">
+        <div class="headcart"> Cart </div>
+        <form name="myform" action="placedorder.html" class="cartdetails" id="shopform" onsubmit="return validateForm()">
+
+            <div class="items">
+            <label for="catagory">Choose a Catagory<span>*</span> : </label>
+            <select name="catagory" id="cat1" form="shopform">
+                <option value="selectamong" >Select One from below</option>
+                <option value="tshirt">T-Shirt</option>
+                <option value="jeans">Jeans</option>
+                <option value="shoes">Shoes</option>
+                <option value="watch">Watch</option>
+            </select></div>
+
+            <div class="items">
+            <label for="pno">Select Product Number<span>*</span> : </label>
+            <select name="pno" id="pno1" form="shopform">
+                <option value="selectamong">Select One from below</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select> </div>
+
+            <div class="items">
+            <label for="name">Name<span>*</span> :  </label>
+            <input type="text" placeholder="Enter your full name: " id="fullname" name="fullname" autocomplete="nofill" >
+            </div>
+
+            <div class="items">
+            <label for="email">Email<span>*</span> : </label>
+            <input type="text" placeholder="Enter your email: " id="email" name="email" autocomplete="off"></div>
+
+            <div class="items">
+            <label for="mob">Mobile Number<span>*</span> : </label>
+            <input type="text" placeholder="Enter Your Number: " id="mob" name="mob" autocomplete="nofill"></div>
+
+            <div class="items">
+            <label for="add">Address<span>*</span> : </label>
+            <input type="text" placeholder="Enter Your full Address: " id="add" name="add" autocomplete="nofill"></div>
+
+            <div class="items">
+            <label for="pin">Pincode<span>*</span> : </label>
+            <input type="text" name="pin" id="pin" placeholder="Enter 6 digit pin code: " autocomplete="nofill"></div>
+
+            <div class="submit">
+            <input type="submit" value="Order  Now">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

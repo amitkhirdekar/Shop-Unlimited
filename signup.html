@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+    <title>Cart | Shop Unlimited</title>
+</head>
+<body>
+    <header class="headings">
+        <nav class="navigationbar">
+            <div class="logo">
+                <img src="Images/logo.png" alt="Logo">
+            </div>
+            <div class="websitename">
+                Shop Unlimited
+            </div>
+
+
+            <ul class="links">
+                <a href="index.html"><li class="lnks">Home</li></a> 
+                <a href="signin.html"><li class="lnks">Sign IN</li></a> 
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="cartitems">
+        <div class="headcart"> Sign Up </div>
+        <div class="desc"> Already Have Account? <a href="signin.html"> Sign in </a> Instead ! </div>
+        <form name="myform1" action="" class="cartdetails" id="shopform1">
+
+            <div class="items">
+            <label for="email">Email<span>*</span> : </label>
+            <input type="text" placeholder="Enter your email: " id="email" name="email" autocomplete="off"></div>
+
+            <div class="items">
+            <label for="name">Name<span>*</span> :  </label>
+            <input type="text" placeholder="Enter your full name: " id="fullname" name="fullname" autocomplete="nofill" >
+            </div>
+
+            <div class="items" id= "genderid">
+                <label for="gender">Gender<span>*</span> : </label>
+                <input type="radio" name="gender" id="male" value="male"> Male
+                <input type="radio" name="gender" id="female" value="male"> Female
+            </div>
+        
+            <div class="items">
+            <label for="mob">Mobile Number<span>*</span> : </label>
+            <input type="text" placeholder="Enter Your Number: " id="mob" name="mob" autocomplete="nofill"></div>
+
+            <div class="items">
+            <label for="add">Address : </label>
+            <input type="text" placeholder="Enter Your full Address: " id="add" name="add" autocomplete="nofill"></div>
+
+            <div class="items">
+            <label for="pin">Pincode<span>*</span> : </label>
+            <input type="text" name="pin" id="pin" placeholder="Enter 6 digit pin code: " autocomplete="nofill"></div>
+
+            <div class="items">
+                <label for="pass">Password<span>*</span> : </label>
+                <input type="password" placeholder="Enter your Password: " id="pass" name="pass" autocomplete="off"></div>
+
+            <div class="items">
+                <label for="cpass">Confirm Password<span>*</span> : </label>
+                <input type="password" placeholder="Confirm your Password: " id="cpass" name="cpass" autocomplete="off"></div>
+
+            <div class="submit">
+            <input type="submit" name="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="jvalidation1.js"></script>
+</body>
+</html>

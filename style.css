@@ -1,0 +1,434 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+body{
+    background: url(Images/background.png);
+}
+
+a{
+    text-decoration: none;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.activelink{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+#woman{
+    animation: inwoman 2s linear;
+}
+.woman2{
+    animation: inwoman 2s linear;
+}
+@keyframes inwoman{
+    from{
+        transform: translateX(90px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+#frames{
+    animation: inframes 1.5s linear;
+}
+@keyframes inframes{
+    from{
+        transform: translateX(-120px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.bgnd{
+    animation: inbgnd 1.5s linear;
+}
+@keyframes inbgnd{
+    from{
+        transform: translateY(40px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.man{
+    animation: inman 2s linear;
+}
+@keyframes inman{
+    from{
+        transform: translateX(90px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.boxes{
+    animation: inboxes 1.5s linear;
+}
+@keyframes inboxes{
+    from{
+        transform: translateX(-120px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.headings{
+    position: sticky;
+    top: 0;
+}
+
+.navigationbar{
+    display: flex;
+    margin: 20px 20px 0px 40px;
+}
+
+.logo{
+    padding: 10px 2px 10px 10px;
+}
+
+.logo img{
+    height: 60px;
+    width: 60px;
+}
+
+.websitename{
+    font-size: 2rem;
+    color: aliceblue;
+    padding: 20px 10px 10px 2px;
+}
+
+.links{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.lnks{
+    color: aliceblue;
+    display: flex;
+    padding: 10px 15px 10px 15px;
+    font-size: 1.4rem;
+}
+
+.lnks:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#l1{
+    color: rgba(255, 0, 0, 0.6);
+    transition: all 0.3s linear;
+}
+
+#l1:hover{
+    color: red;
+}
+
+
+/* Introduction and Range of products */
+.range{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.textrange{
+    font-family: 'Architects Daughter', cursive;
+    margin: 0px 100px 0px 100px;
+    font-size: 3.5rem;
+}
+
+.textrange span{
+    color: aliceblue;
+}
+
+
+#intro{
+    color: blanchedalmond;
+    font-size: 2rem;
+    font-family: 'Lobster Two', cursive;
+}
+
+.photo1{
+    margin: 0px 90px 0px auto;
+    height: 600px;
+    width: 600px;
+}
+
+.svg1{
+    margin: 0px 30px 0px auto;
+    height: 600px;
+    width: 600px;
+}
+
+/* Fastest Delivery Part  */
+.delivery{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.photo2{
+    margin: 0px auto 0px 90px;
+    height: 600px;
+    width: 600px;
+}
+
+.textdelivery{
+    font-family: 'Architects Daughter', cursive;
+    margin: 0px 100px 0px 150px;
+    font-size: 3.5rem;
+}
+
+.textdelivery span{
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+
+.svg2{
+    margin: 0px auto 0px 10px;
+    height: 600px;
+    width: 600px;
+}
+
+/* Discount Section  */
+.discount{
+    display: flex;
+    align-items: center;
+}
+
+.textdiscount{
+    font-family: 'Architects Daughter', cursive;
+    margin: 0px 100px 0px 100px;
+    font-size: 3.5rem;
+}
+
+.textdiscount span{
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+
+.photo3{
+    margin: 0px 90px 0px auto;
+    height: 600px;
+    width: 600px;
+}
+
+.svg3{
+    margin: 0px 90px 0px auto;
+    height: 600px;
+    width: 600px;
+}
+
+/* LAst Button  */
+.headtoshop{
+    opacity: 0.8;
+    box-shadow: 0px 0px 100px 20px white;
+    border-radius: 20px;
+    margin: 30px auto 50px auto;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    color: black;
+}
+
+
+/* Card Buttons  */
+.card img{
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+}
+
+.card{
+    box-shadow: 0px 0px 80px 20px rgba(255, 255, 255, 0.8);
+    background: white;
+    border-radius: 10px;
+    height: 450px;
+    width: 400px;
+    align-items: center;
+}
+
+.card span{
+    margin-left: 120px;
+    font-size: 1.3rem;
+}
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading{
+    z-index: 2;
+    color:rgb(35, 66, 168);
+    font-size: 3rem;
+    margin: 40px 40% 20px 40%;
+}
+
+/* Cart Items  */
+.cartitems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.headcart{
+    color: blanchedalmond;
+    font-size: 3rem;
+}
+
+select, input{
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.correct{
+    border-color: rgba(0, 255, 0, 0.2);
+    box-shadow: 0px 0px 7px rgb(118, 223, 118);
+}
+
+.incorrect{
+    border-color: rgba(255, 0, 0, 0.7);
+    box-shadow: 0px 0px 7px red;
+}
+
+.items{
+    /* margin: 10px 450px 10px 450px; */
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.items span{
+    color: red;
+}
+
+.submit{
+    /* margin: 30px 450px 50px 450px; */
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+/* About Us PAge  */
+.htext{
+    font-size: 3rem;
+    color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myphoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.myphoto img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px black;
+    transition: 1s ease;
+}
+
+.myphoto img:hover{
+    width: 400px;
+    height: 400px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: column;
+    font-size: 3rem;
+}
+
+.details span{
+    color: blanchedalmond;
+}
+
+#a123{
+    color: black;
+}
+
+
+/* Order Placed  */
+.placed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+#delivered{
+    margin: 0px 10px 10px 10px;
+    margin: auto;
+    width: 400px;
+}
+
+/* Sign Up Page */
+.desc{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 10px;
+}
+
+.desc a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px rgb(194, 149, 90);
+}
+
+#genderid{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#male,#female{
+    border: 0px;
+    width: 30px;
+    height: 1.4rem;
+}
+
+#male{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#female{
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+#shopform1 .error, #shopform2 .error{
+    color: red;
+}
