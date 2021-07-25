@@ -1,6 +1,9 @@
 # Shop-Unlimited
 A responsive website of E-commerce build from scratch without using any frameworks. Frontend is done in HTML, CSS and Javascript. Backend is PHP and MySQL which is yet to be done.
 
+## Website
+This Website is hosted [here](https://amitkhirdekar.github.io/Shop-Unlimited/). If you are not directed click: https://amitkhirdekar.github.io/Shop-Unlimited/
+
 ## Screenshots
 <p align="center">
 <img src="Screenshots/Screenshot%202021-03-09%2017.32.17.png" width="49%"></img>
